@@ -1,0 +1,31 @@
+server:
+  port: 9090
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://yejinyun.cn:3306/ye?useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: yejy
+    password: kfJINdifc186@*
+  mustache:
+    charset: UTF-8
+  cache:
+    jcache:
+      config: ehcache.xml
+
+logging:
+  level:
+    root: WARN
+    org.springframework.security: INFO
+http:
+  encoding:
+    enabled: true
+    charset: UTF-8
+    force-response: true
+    force: true
+
+token:
+  key: '@ay*L(M_~M245!'
+  issuer: http://yejinyun.cn
+  subject: ye_093@163.com
+  expiration: 3600000
+  header: user_token
