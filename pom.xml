@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>cn.yejy</groupId>
-    <artifactId>TokenSecurity</artifactId>
+    <artifactId>PzFreshServer</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -141,7 +141,7 @@
                             <logging>DEBUG</logging>
                             <jdbc>
                                 <driver>com.mysql.jdbc.Driver</driver>
-                                <url>jdbc:mysql://yejinyun.cn:3306/ye?useSSL=false</url>
+                                <url>jdbc:mysql://yejinyun.cn:3306/serp?useSSL=false</url>
                                 <username>yejy</username>
                                 <password>kfJINdifc186@*</password>
                             </jdbc>
@@ -153,7 +153,7 @@
                                     <includes>.*</includes>
                                     <excludes/>
                                     <!--数据库名-->
-                                    <inputSchema>ye</inputSchema>
+                                    <inputSchema>serp</inputSchema>
                                 </database>
                                 <strategy>
                                     <matchers>
